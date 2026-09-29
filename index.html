@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Pablo de la Torre, Industrial Design and Product Development Engineering student specializing in CAD, DFM, and eco-design.">
   <title>Pablo de la Torre | Industrial Design & Mechanical Engineer</title>
-  <!-- Tailwind CSS CDN -->
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Inter & JetBrains Mono -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <script>
     tailwind.config = {
       theme: {
@@ -30,13 +32,12 @@
     }
   </script>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-100 selection:text-blue-900 overflow-x-hidden">
 
-  <!-- NAVBAR -->
   <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-200">
     <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#" class="font-semibold tracking-tight text-slate-900 hover:text-blue-600 transition">Pablo de la Torre</a>
-      <nav class="flex space-x-6 text-sm font-medium text-slate-600">
+      <a href="#top" class="font-semibold tracking-tight text-slate-900 hover:text-blue-600 transition">Pablo de la Torre</a>
+      <nav aria-label="Main navigation" class="flex space-x-6 text-sm font-medium text-slate-600">
         <a href="#projects" class="hover:text-slate-900 transition">Projects</a>
         <a href="#skills" class="hover:text-slate-900 transition">Skills</a>
         <a href="#about" class="hover:text-slate-900 transition">About</a>
@@ -45,612 +46,609 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="max-w-5xl mx-auto px-6 pt-24 pb-16">
-    <div class="max-w-3xl">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-blue-50 text-blue-700 border border-blue-200 mb-6">
-        <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-        Seeking Product Design / Hardware Internships (2026-2027)
-      </div>
-      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-950 mb-6 leading-tight">
-        Mechanical Design Engineer specializing in Advanced CAD, DFM &amp; Eco-Design.
-      </h1>
-      <p class="text-lg text-slate-600 mb-8 leading-relaxed">
-        Industrial Design &amp; Product Development Engineering student at Universidad de Cádiz[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span). Bridging complex solid &amp; surface modeling (SolidWorks, CATIA V5)[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span) with manufacturing feasibility, lifecycle assessment (LCA)[span_9](start_span)[span_9](end_span)[span_10](start_span)[span_10](end_span), and AI-driven CAD automation[span_11](start_span)[span_11](end_span).
-      </p>
-      <div class="flex flex-wrap gap-4 items-center font-mono text-sm">
-        <a href="#projects" class="px-5 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition font-sans font-medium">Explore Projects</a>
-        <a href="https://www.linkedin.com/in/pablodlta/" target="_blank" class="px-5 py-2.5 border border-slate-300 rounded-lg hover:bg-slate-100 transition font-sans font-medium">LinkedIn</a>
-        <a href="mailto:pablodelatorrearagon@gmail.com" class="px-5 py-2.5 border border-slate-300 rounded-lg hover:bg-slate-100 transition font-sans font-medium">Email Me</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
-    <div class="flex items-baseline justify-between mb-12">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Featured Engineering Projects</h2>
-      <span class="font-mono text-xs text-slate-500">05 Selected Cases</span>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-      <!-- PROJECT 1: CAD LLM Automation (TFG) -->
-      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
-        <div class="p-6">
-          <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
-            <span>BACHELOR'S THESIS</span>
-            <span>2026 — PRESENT</span>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">Automated CAD Synthesis via KBE &amp; Local LLM</h3>
-          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-            Developing an automated Knowledge-Based Engineering system integrating local LLMs with Model Context Protocol (MCP) servers to translate natural language mechanical parameters into SolidWorks parametric geometry[span_12](start_span)[span_12](end_span)[span_13](start_span)[span_13](end_span).
-          </p>
-          <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600 mb-6">
-            <span class="bg-slate-100 px-2 py-0.5 rounded">SolidWorks API</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">MCP Server</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">Python</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">Local LLM</span>
-          </div>
+  <main id="top">
+    <section class="max-w-5xl mx-auto px-6 pt-24 pb-16">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-blue-50 text-blue-700 border border-blue-200 mb-6">
+          <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+          Seeking Product Design / Hardware Internships (2026-2027)
         </div>
-        <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
-          <span class="text-xs font-mono text-slate-500">In Active Development</span>
-          <span class="text-xs font-mono text-blue-600 font-medium">Research Project</span>
+
+        <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-950 mb-6 leading-tight">
+          Mechanical Design Engineer specializing in Advanced CAD, DFM & Eco-Design.
+        </h1>
+
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+          Industrial Design & Product Development Engineering student at Universidad de Cádiz. Bridging complex solid modelling, manufacturing logic, and sustainable product thinking to create functional systems that are both efficient and human-centered.
+        </p>
+
+        <div class="flex flex-wrap gap-4 items-center font-mono text-sm">
+          <a href="#projects" class="px-5 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition font-sans font-medium">Explore Projects</a>
+          <a href="https://www.linkedin.com/in/pablodlta/" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 border border-slate-300 rounded-lg hover:bg-slate-100 transition font-sans font-medium">LinkedIn</a>
+          <a href="mailto:pablodelatorrearagon@gmail.com" class="px-5 py-2.5 border border-slate-300 rounded-lg hover:bg-slate-100 transition font-sans font-medium">Email Me</a>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <!-- PROJECT 2: AEROSTREAM BLENDER -->
-      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
-        <div class="p-6">
-          <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
-            <span>PRODUCT DESIGN &amp; ECO-DESIGN</span>
-            <span>2026</span>
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
+      <div class="flex items-baseline justify-between mb-12">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Featured Engineering Projects</h2>
+        <span class="font-mono text-xs text-slate-500">05 Selected Cases</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
+              <span>BACHELOR'S THESIS</span>
+              <span>2026 — PRESENT</span>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Automated CAD Synthesis via KBE & Local LLM</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+              Developing an automated Knowledge-Based Engineering system integrating local LLMs with Model Context Protocol (MCP) servers to translate natural language mechanical parameters into SolidWorks-ready design logic.
+            </p>
+            <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600 mb-6">
+              <span class="bg-slate-100 px-2 py-0.5 rounded">SolidWorks API</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">MCP Server</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Python</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Local LLM</span>
+            </div>
           </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">AeroStream: Modular Eco-Blender System</h3>
-          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-            Comprehensive electro-mechanical product design under Apple eco-design guidelines[span_14](start_span)[span_14](end_span). Features a twist-and-lock container docking interface, PEEK transmission coupling, manual vacuum preservation, DFD architecture, and LCA optimization via SolidWorks Sustainability[span_15](start_span)[span_15](end_span).
-          </p>
+          <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
+            <span class="text-xs font-mono text-slate-500">In Active Development</span>
+            <span class="text-xs font-mono text-blue-600 font-medium">Research Project</span>
+          </div>
+        </article>
 
-          <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-slate-50 rounded-lg border border-slate-100 mb-4 font-mono text-center">
-            <div>
-              <span class="block text-xs text-slate-400">CHASSIS</span>
-              <span class="text-sm font-semibold text-slate-800">Al 6000 (&gt;75% Rec.)</span>
+        <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
+              <span>PRODUCT DESIGN & ECO-DESIGN</span>
+              <span>2026</span>
             </div>
-            <div>
-              <span class="block text-xs text-slate-400">FASTENERS</span>
-              <span class="text-sm font-semibold text-slate-800">M4 DFD / Zero-Glue</span>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">AeroStream: Modular Eco-Blender System</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+              Comprehensive electro-mechanical product design under Apple eco-design guidelines. Features a twist-and-lock container docking interface, PEEK transmission elements, and a low-material, serviceable product architecture.
+            </p>
+
+            <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-slate-50 rounded-lg border border-slate-100 mb-4 font-mono text-center">
+              <div>
+                <span class="block text-xs text-slate-400">CHASSIS</span>
+                <span class="text-sm font-semibold text-slate-800">Al 6000 (&gt;75% Rec.)</span>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">FASTENERS</span>
+                <span class="text-sm font-semibold text-slate-800">M4 DFD / Zero-Glue</span>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">BLADES</span>
+                <span class="text-sm font-semibold text-slate-800">AISI 316 + DLC</span>
+              </div>
             </div>
-            <div>
-              <span class="block text-xs text-slate-400">BLADES</span>
-              <span class="text-sm font-semibold text-slate-800">AISI 316 + DLC</span>
+
+            <ul class="text-xs text-slate-600 space-y-1.5 mb-6 list-disc list-inside">
+              <li>Ergonomic Tritan Renew jar with 110 mm handle clearance for comfortable single-hand use.</li>
+              <li>Injection-molded PEEK M8 coupling for high-temperature torque transmission.</li>
+              <li>Comparative LCA in SolidWorks Sustainability against a market baseline.</li>
+            </ul>
+
+            <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600">
+              <span class="bg-slate-100 px-2 py-0.5 rounded">SolidWorks (3D & GD&amp;T)</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Sustainability (LCA)</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Die Casting & CNC</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">PVD DLC Coating</span>
             </div>
           </div>
 
-          <ul class="text-xs text-slate-600 space-y-1.5 mb-6 list-disc list-inside">
-            <li>Ergonomic Tritan Renew jar with 110 mm handle clearance (P95 male fit)[span_16](start_span)[span_16](end_span).</li>
-            <li>Injection-molded PEEK M8 coupling for high-temperature torque transmission[span_17](start_span)[span_17](end_span).</li>
-            <li>Comparative LCA in SolidWorks Sustainability against market baseline[span_18](start_span)[span_18](end_span).</li>
+          <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
+            <span class="text-xs font-mono text-slate-500">Full 2D Drawings & ACV</span>
+            <button type="button" onclick="openModal('aerostream-modal')" class="text-sm font-medium text-blue-600 hover:text-blue-700">
+              View Engineering Details &rarr;
+            </button>
+          </div>
+        </article>
+
+        <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
+              <span>PACKAGING & SURFACE ENGINEERING</span>
+              <span>MAY 2025</span>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Koky: Luxury Pet Fragrance & Mechanisms</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+              End-to-end development of an aluminum cosmetic container, friction-fit cap mechanism, and hexagonal secondary packaging. Integrates advanced industrial aesthetics, ergonomic surfaces, and realistic logistics constraints.
+            </p>
+
+            <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-slate-50 rounded-lg border border-slate-100 mb-4 font-mono text-center">
+              <div>
+                <span class="block text-xs text-slate-400">VOLUME</span>
+                <span class="text-sm font-semibold text-slate-800">150 ml</span>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">MATERIAL</span>
+                <span class="text-sm font-semibold text-slate-800">Aluminium</span>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">PALLET UNIT</span>
+                <span class="text-sm font-semibold text-slate-800">84 / EPAL</span>
+              </div>
+            </div>
+
+            <ul class="text-xs text-slate-600 space-y-1.5 mb-6 list-disc list-inside">
+              <li>Bi-directional helical sweep pattern cut for diamond tactile gripping.</li>
+              <li>Threadless friction-fit cap mechanism with laser-etched variant iconography.</li>
+              <li>Separable PP pump core and aluminum collar to prevent recycling contamination.</li>
+            </ul>
+
+            <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600">
+              <span class="bg-slate-100 px-2 py-0.5 rounded">CAD Lofting & Sweeps</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Impact Extrusion</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">FDM Prototyping</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">EPAL Logistics</span>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
+            <span class="text-xs font-mono text-slate-500">Physical Prototypes Tested</span>
+            <button type="button" onclick="openModal('koky-modal')" class="text-sm font-medium text-blue-600 hover:text-blue-700">
+              View Engineering Details &rarr;
+            </button>
+          </div>
+        </article>
+
+        <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
+              <span>MATERIALS & PROCESS OPTIMIZATION</span>
+              <span>2025</span>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">UCAchew: Ethological Dog Toy & Ashby Material Selection</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+              Biomechanical design and material screening for a heavy-duty canine toy. Combines Ashby chart filtering, TPU material optimization, and functional safety validation for long-cycle play.
+            </p>
+
+            <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-slate-50 rounded-lg border border-slate-100 mb-4 font-mono text-center">
+              <div>
+                <span class="block text-xs text-slate-400">MATERIAL</span>
+                <span class="text-sm font-semibold text-slate-800">TPU Shore A80</span>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">BITE RATING</span>
+                <span class="text-sm font-semibold text-slate-800">235–328 PSI</span>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">PROCESS</span>
+                <span class="text-sm font-semibold text-slate-800">Blow Molding</span>
+              </div>
+            </div>
+
+            <ul class="text-xs text-slate-600 space-y-1.5 mb-6 list-disc list-inside">
+              <li>Screened against Natural Rubber, SEBS, and PA via Ashby multi-objective charts.</li>
+              <li>Uniform 5 mm hollow wall thickness engineered for elastic damping and treat dispensing.</li>
+              <li>Visual dichromacy compliance (blue/yellow spectrum) and EN 71-3 safety focus.</li>
+            </ul>
+
+            <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600">
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Ashby Selection</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Blow Molding DFM</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Aliphatic TPU</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">EN 71-3 / FDA</span>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
+            <span class="text-xs font-mono text-slate-500">DFM & Material Screening</span>
+            <button type="button" onclick="openModal('ucachew-modal')" class="text-sm font-medium text-blue-600 hover:text-blue-700">
+              View Engineering Details &rarr;
+            </button>
+          </div>
+        </article>
+
+        <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
+              <span>FLAT-PACK & MODULAR FURNITURE</span>
+              <span>NOV 2025</span>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Modular Flat-Pack Divider: Telework Partition System</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+              Multi-functional domestic workspace divider developed for remote workers. Features extruded aluminum 360° hinge rails, CNC-routed keyhole mounting interfaces, and strong flat-pack logistics.
+            </p>
+
+            <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-slate-50 rounded-lg border border-slate-100 mb-4 font-mono text-center">
+              <div>
+                <span class="block text-xs text-slate-400">KINEMATICS</span>
+                <span class="text-sm font-semibold text-slate-800">360° Hinge Rail</span>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">MATERIAL</span>
+                <span class="text-sm font-semibold text-slate-800">FSC Birch + Al</span>
+              </div>
+              <div>
+                <span class="block text-xs text-slate-400">LOGISTICS</span>
+                <span class="text-sm font-semibold text-slate-800">EPAL 1 (5 Layers)</span>
+              </div>
+            </div>
+
+            <ul class="text-xs text-slate-600 space-y-1.5 mb-6 list-disc list-inside">
+              <li>Dual-profile extruded aluminum hinges with stainless steel core pins for full 360° folding.</li>
+              <li>CNC keyhole fastening matrix accommodating sit/stand desk tables and cantilever storage bins.</li>
+              <li>Zero-slack 5-tier internal packing architecture inside a 660x920x574 mm corrugated carton.</li>
+            </ul>
+
+            <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600">
+              <span class="bg-slate-100 px-2 py-0.5 rounded">CATIA V5 / SolidWorks</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">Flat-Pack DFM</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">360° Kinematics</span>
+              <span class="bg-slate-100 px-2 py-0.5 rounded">EPAL 1 Logistics</span>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
+            <span class="text-xs font-mono text-slate-500">Full 2D BOM & Logistics</span>
+            <button type="button" onclick="openModal('flatpack-modal')" class="text-sm font-medium text-blue-600 hover:text-blue-700">
+              View Engineering Details &rarr;
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
+      <div class="flex items-baseline justify-between mb-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Technical Proficiencies</h2>
+        <span class="font-mono text-xs text-slate-500">Core Engineering Toolset</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 font-mono text-xs">
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">3D CAD & Geometrics</h4>
+          <ul class="space-y-1.5 text-slate-600">
+            <li>SolidWorks & CATIA V5</li>
+            <li>AutoCAD 2D (ISO / DIN)</li>
+            <li>GD&amp;T & tolerance stack-up</li>
+            <li>Kinematic & fit assembly</li>
           </ul>
-
-          <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600">
-            <span class="bg-slate-100 px-2 py-0.5 rounded">SolidWorks (3D &amp; GD&amp;T)</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">Sustainability (LCA)</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">Die Casting &amp; CNC</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">PVD DLC Coating</span>
-          </div>
         </div>
 
-        <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
-          <span class="text-xs font-mono text-slate-500">Full 2D Drawings &amp; ACV</span>
-          <button onclick="openModal('aerostream-modal')" class="text-sm font-medium text-blue-600 hover:text-blue-700">
-            View Engineering Details &rarr;
-          </button>
-        </div>
-      </article>
-
-      <!-- PROJECT 3: KOKY PACKAGING -->
-      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
-        <div class="p-6">
-          <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
-            <span>PACKAGING &amp; SURFACE ENGINEERING</span>
-            <span>MAY 2025</span>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">Koky: Luxury Pet Fragrance &amp; Mechanisms</h3>
-          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-            End-to-end development of an aluminum cosmetic container (150 ml), friction-fit cap mechanism, and hexagonal secondary packaging[span_19](start_span)[span_19](end_span). Integrates advanced parametric modeling, DFM for impact extrusion, and ISO 3394 pallet logistics[span_20](start_span)[span_20](end_span).
-          </p>
-
-          <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-slate-50 rounded-lg border border-slate-100 mb-4 font-mono text-center">
-            <div>
-              <span class="block text-xs text-slate-400">VOLUME</span>
-              <span class="text-sm font-semibold text-slate-800">150 ml</span>
-            </div>
-            <div>
-              <span class="block text-xs text-slate-400">MATERIAL</span>
-              <span class="text-sm font-semibold text-slate-800">Aluminium</span>
-            </div>
-            <div>
-              <span class="block text-xs text-slate-400">PALLET UNIT</span>
-              <span class="text-sm font-semibold text-slate-800">84 / EPAL</span>
-            </div>
-          </div>
-
-          <ul class="text-xs text-slate-600 space-y-1.5 mb-6 list-disc list-inside">
-            <li>Bi-directional helical sweep pattern cut for diamond tactile gripping[span_21](start_span)[span_21](end_span).</li>
-            <li>Threadless friction-fit cap mechanism with laser-etched variant iconography[span_22](start_span)[span_22](end_span).</li>
-            <li>Separable PP pump core and aluminum collar to prevent recycling contamination[span_23](start_span)[span_23](end_span).</li>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">DFM, FEA & Materials</h4>
+          <ul class="space-y-1.5 text-slate-600">
+            <li>Injection & blow molding tooling</li>
+            <li>Die casting & CNC machining</li>
+            <li>FEA stress/strain analysis</li>
+            <li>Ashby screening (TPU, PEEK, Al)</li>
           </ul>
-
-          <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600">
-            <span class="bg-slate-100 px-2 py-0.5 rounded">CAD Lofting &amp; Sweeps</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">Impact Extrusion</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">FDM Prototyping</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">EPAL Logistics</span>
-          </div>
         </div>
 
-        <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
-          <span class="text-xs font-mono text-slate-500">Physical Prototypes Tested</span>
-          <button onclick="openModal('koky-modal')" class="text-sm font-medium text-blue-600 hover:text-blue-700">
-            View Engineering Details &rarr;
-          </button>
-        </div>
-      </article>
-
-      <!-- PROJECT 4: UCACHEW DOG TOY -->
-      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
-        <div class="p-6">
-          <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
-            <span>MATERIALS &amp; PROCESS OPTIMIZATION</span>
-            <span>2025</span>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">UCAchew: Ethological Dog Toy &amp; Ashby Material Selection</h3>
-          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-            Biomechanical design and material screening for a heavy-duty canine toy[span_24](start_span)[span_24](end_span)[span_25](start_span)[span_25](end_span). Combines Ashby chart filtering, TPU Shore A80 selection (25–35 kN/m tear resistance), blow molding DFM for a 5 mm hollow wall, and European safety compliance (EN 71-3)[span_26](start_span)[span_26](end_span)[span_27](start_span)[span_27](end_span)[span_28](start_span)[span_28](end_span).
-          </p>
-
-          <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-slate-50 rounded-lg border border-slate-100 mb-4 font-mono text-center">
-            <div>
-              <span class="block text-xs text-slate-400">MATERIAL</span>
-              <span class="text-sm font-semibold text-slate-800">TPU Shore A80</span>
-            </div>
-            <div>
-              <span class="block text-xs text-slate-400">BITE RATING</span>
-              <span class="text-sm font-semibold text-slate-800">235–328 PSI</span>
-            </div>
-            <div>
-              <span class="block text-xs text-slate-400">PROCESS</span>
-              <span class="text-sm font-semibold text-slate-800">Blow Molding</span>
-            </div>
-          </div>
-
-          <ul class="text-xs text-slate-600 space-y-1.5 mb-6 list-disc list-inside">
-            <li>Screened against Natural Rubber, SEBS, and PA via Ashby multi-objective charts[span_29](start_span)[span_29](end_span).</li>
-            <li>Uniform 5 mm hollow wall thickness engineered for elastic damping and treat dispensing[span_30](start_span)[span_30](end_span)[span_31](start_span)[span_31](end_span).</li>
-            <li>Visual dichromacy compliance (blue/yellow wavelength spectrum) and EN 71-3 safety[span_32](start_span)[span_32](end_span)[span_33](start_span)[span_33](end_span)[span_34](start_span)[span_34](end_span).</li>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">Automation & Testing</h4>
+          <ul class="space-y-1.5 text-slate-600">
+            <li>FDM additive manufacturing</li>
+            <li>KBE & SolidWorks API (Python)</li>
+            <li>Model Context Protocol (MCP)</li>
+            <li>Physical proof-of-concept testing</li>
           </ul>
-
-          <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600">
-            <span class="bg-slate-100 px-2 py-0.5 rounded">Ashby Selection</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">Blow Molding DFM</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">Aliphatic TPU</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">EN 71-3 / FDA</span>
-          </div>
         </div>
 
-        <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
-          <span class="text-xs font-mono text-slate-500">DFM &amp; Material Screening</span>
-          <button onclick="openModal('ucachew-modal')" class="text-sm font-medium text-blue-600 hover:text-blue-700">
-            View Engineering Details &rarr;
-          </button>
-        </div>
-      </article>
-
-      <!-- PROJECT 5: FLAT-PACK DIVIDER -->
-      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
-        <div class="p-6">
-          <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
-            <span>FLAT-PACK &amp; MODULAR FURNITURE</span>
-            <span>NOV 2025</span>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">Modular Flat-Pack Divider: Telework Partition System</h3>
-          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-            Multi-functional domestic workspace divider developed for remote workers[span_35](start_span)[span_35](end_span). Features extruded aluminum 360° hinge rails, a CNC-routed keyhole mounting matrix for toolless accessories, sit/stand ergonomic configurations, and EPAL 1 pallet logistics[span_36](start_span)[span_36](end_span).
-          </p>
-
-          <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-slate-50 rounded-lg border border-slate-100 mb-4 font-mono text-center">
-            <div>
-              <span class="block text-xs text-slate-400">KINEMATICS</span>
-              <span class="text-sm font-semibold text-slate-800">360° Hinge Rail</span>
-            </div>
-            <div>
-              <span class="block text-xs text-slate-400">MATERIAL</span>
-              <span class="text-sm font-semibold text-slate-800">FSC Birch + Al</span>
-            </div>
-            <div>
-              <span class="block text-xs text-slate-400">LOGISTICS</span>
-              <span class="text-sm font-semibold text-slate-800">EPAL 1 (5 Layers)</span>
-            </div>
-          </div>
-
-          <ul class="text-xs text-slate-600 space-y-1.5 mb-6 list-disc list-inside">
-            <li>Dual-profile extruded aluminum hinges with stainless steel core pins for full 360° folding[span_37](start_span)[span_37](end_span).</li>
-            <li>CNC keyhole fastening matrix accommodating sit/stand desk tables and cantilever storage bins[span_38](start_span)[span_38](end_span).</li>
-            <li>Zero-slack 5-tier internal packing architecture inside a 660x920x574 mm corrugated carton[span_39](start_span)[span_39](end_span).</li>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">LCA & Industry Standards</h4>
+          <ul class="space-y-1.5 text-slate-600">
+            <li>SolidWorks Sustainability (LCA)</li>
+            <li>Design for disassembly (DFD)</li>
+            <li>CE marking, EN 71-3 & FDA CFR 21</li>
+            <li>English: C1 | French: B1 | German: A2</li>
           </ul>
-
-          <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600">
-            <span class="bg-slate-100 px-2 py-0.5 rounded">CATIA V5 / SolidWorks</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">Flat-Pack DFM</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">360° Kinematics</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">EPAL 1 Logistics</span>
-          </div>
         </div>
-
-        <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
-          <span class="text-xs font-mono text-slate-500">Full 2D BOM &amp; Logistics</span>
-          <button onclick="openModal('flatpack-modal')" class="text-sm font-medium text-blue-600 hover:text-blue-700">
-            View Engineering Details &rarr;
-          </button>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
-    <div class="flex items-baseline justify-between mb-8">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Technical Proficiencies</h2>
-      <span class="font-mono text-xs text-slate-500">Core Engineering Toolset</span>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 font-mono text-xs">
-      
-      <!-- Box 1: CAD & Drafting -->
-      <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
-        <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">3D CAD &amp; Geometrics</h4>
-        <ul class="space-y-1.5 text-slate-600">
-          <li>SolidWorks &amp; CATIA V5 (GSD)[span_40](start_span)[span_40](end_span)[span_41](start_span)[span_41](end_span)</li>
-          <li>AutoCAD 2D (ISO / DIN Standards)[span_42](start_span)[span_42](end_span)[span_43](start_span)[span_43](end_span)</li>
-          <li>GD&amp;T &amp; Tolerance Stack-Up[span_44](start_span)[span_44](end_span)[span_45](start_span)[span_45](end_span)</li>
-          <li>Kinematic &amp; Fit Assembly[span_46](start_span)[span_46](end_span)[span_47](start_span)[span_47](end_span)</li>
-        </ul>
       </div>
+    </section>
 
-      <!-- Box 2: Mechanics & DFM -->
-      <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
-        <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">DFM, FEA &amp; Materials</h4>
-        <ul class="space-y-1.5 text-slate-600">
-          <li>Injection &amp; Blow Molding Tooling[span_48](start_span)[span_48](end_span)[span_49](start_span)[span_49](end_span)[span_50](start_span)[span_50](end_span)</li>
-          <li>Die Casting &amp; CNC Machining[span_51](start_span)[span_51](end_span)[span_52](start_span)[span_52](end_span)</li>
-          <li>FEA Stress/Strain Analysis[span_53](start_span)[span_53](end_span)[span_54](start_span)[span_54](end_span)</li>
-          <li>Ashby Screening (TPU, PEEK, Al)[span_55](start_span)[span_55](end_span)[span_56](start_span)[span_56](end_span)</li>
-        </ul>
+    <section id="about" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
+      <div class="flex items-baseline justify-between mb-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">About & Engineering Background</h2>
+        <span class="font-mono text-xs text-slate-500">Profile & Vision</span>
       </div>
-
-      <!-- Box 3: Prototyping & Automation -->
-      <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
-        <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">Automation &amp; Testing</h4>
-        <ul class="space-y-1.5 text-slate-600">
-          <li>FDM Additive Mfg. (PLA / TPU)[span_57](start_span)[span_57](end_span)[span_58](start_span)[span_58](end_span)[span_59](start_span)[span_59](end_span)</li>
-          <li>KBE &amp; SolidWorks API (Python)[span_60](start_span)[span_60](end_span)[span_61](start_span)[span_61](end_span)</li>
-          <li>Model Context Protocol (MCP)[span_62](start_span)[span_62](end_span)[span_63](start_span)[span_63](end_span)</li>
-          <li>Physical Proof-of-Concept Testing[span_64](start_span)[span_64](end_span)[span_65](start_span)[span_65](end_span)</li>
-        </ul>
+      <div class="max-w-3xl space-y-4 text-slate-700 leading-relaxed text-sm">
+        <p>
+          I am a final-year Industrial Design and Product Development Engineering student at the <strong>Universidad de Cádiz (ESI)</strong>, where I have developed a strong foundation in mechanical design, manufacturing, and product development.
+        </p>
+        <p>
+          Alongside traditional mechanical engineering, I actively research the intersection between CAD frameworks and Artificial Intelligence, exploring how knowledge-based design systems can accelerate concept generation and engineering decision-making.
+        </p>
+        <p>
+          During Summer 2026, I completed an extracurricular engineering internship focused on CE marking compliance, technical construction documentation, and European safety requirements for new product development.
+        </p>
       </div>
+    </section>
+  </main>
 
-      <!-- Box 4: Sustainability & Norms -->
-      <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
-        <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">LCA &amp; Industry Standards</h4>
-        <ul class="space-y-1.5 text-slate-600">
-          <li>SolidWorks Sustainability (LCA)[span_66](start_span)[span_66](end_span)[span_67](start_span)[span_67](end_span)</li>
-          <li>Design for Disassembly (DFD)[span_68](start_span)[span_68](end_span)[span_69](start_span)[span_69](end_span)</li>
-          <li>CE Marking, EN 71-3 &amp; FDA CFR 21[span_70](start_span)[span_70](end_span)[span_71](start_span)[span_71](end_span)[span_72](start_span)[span_72](end_span)</li>
-          <li>English: C1 | French: B1 | German: A2[span_73](start_span)[span_73](end_span)[span_74](start_span)[span_74](end_span)[span_75](start_span)[span_75](end_span)</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section id="about" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
-    <div class="flex items-baseline justify-between mb-8">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900">About &amp; Engineering Background</h2>
-      <span class="font-mono text-xs text-slate-500">Profile &amp; Vision</span>
-    </div>
-    <div class="max-w-3xl space-y-4 text-slate-700 leading-relaxed text-sm">
-      <p>
-        I am a final-year Industrial Design and Product Development Engineering student at the <strong>Universidad de Cádiz (ESI)</strong>[span_76](start_span)[span_76](end_span)[span_77](start_span)[span_77](end_span). My core technical focus spans mechanical product architecture, precision CAD modeling (SolidWorks, CATIA V5)[span_78](start_span)[span_78](end_span)[span_79](start_span)[span_79](end_span), and Design for Manufacturing (DFM)[span_80](start_span)[span_80](end_span)[span_81](start_span)[span_81](end_span), grounded in structural calculation, materials engineering, and environmental lifecycle evaluation[span_82](start_span)[span_82](end_span)[span_83](start_span)[span_83](end_span)[span_84](start_span)[span_84](end_span).
-      </p>
-      <p>
-        Alongside traditional mechanical engineering, I actively research the intersection between CAD frameworks and Artificial Intelligence[span_85](start_span)[span_85](end_span)[span_86](start_span)[span_86](end_span). My Bachelor's Thesis investigates automated parametric modeling via Knowledge-Based Engineering (KBE), local LLMs, and Model Context Protocol (MCP) servers to bridge engineering constraints directly into native CAD feature trees[span_87](start_span)[span_87](end_span)[span_88](start_span)[span_88](end_span).
-      </p>
-      <p>
-        During Summer 2026, I completed an extracurricular engineering internship centered on CE marking compliance, technical construction files, and European safety standards for new product development[span_89](start_span)[span_89](end_span)[span_90](start_span)[span_90](end_span). Following graduation in 2027, I am continuing into Master's degree studies while actively seeking Product Design and Hardware Engineering internship opportunities in high-technology environments[span_91](start_span)[span_91](end_span)[span_92](start_span)[span_92](end_span).
-      </p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer class="border-t border-slate-200 bg-white">
     <div class="max-w-5xl mx-auto px-6 py-12 flex flex-col sm:flex-row justify-between items-center text-sm text-slate-500 gap-4">
       <p>&copy; 2026 Pablo de la Torre Aragón. Crafted for engineering reviews.</p>
       <div class="flex gap-6 font-mono text-xs">
-        <a href="https://www.linkedin.com/in/pablodlta/" target="_blank" class="hover:text-slate-900 transition">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/pablodlta/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition">LinkedIn</a>
         <a href="mailto:pablodelatorrearagon@gmail.com" class="hover:text-slate-900 transition">Email</a>
       </div>
     </div>
   </footer>
 
-  <!-- ==================== MODALS ==================== -->
-
-  <!-- MODAL: AEROSTREAM -->
   <div id="aerostream-modal" class="modal-backdrop fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
-    <div class="bg-white border border-slate-200 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
+    <div role="dialog" aria-modal="true" aria-labelledby="aerostream-title" class="bg-white border border-slate-200 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
       <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
         <div>
-          <h4 class="text-2xl font-bold text-slate-900">AeroStream: Engineering Case Study</h4>
-          <p class="text-xs font-mono text-slate-500 mt-1">Lead CAD &amp; Mechanical Design Engineer | Academic Project[span_93](start_span)[span_93](end_span)[span_94](start_span)[span_94](end_span)</p>
+          <h4 id="aerostream-title" class="text-2xl font-bold text-slate-900">AeroStream: Engineering Case Study</h4>
+          <p class="text-xs font-mono text-slate-500 mt-1">Lead CAD & Mechanical Design Engineer | Academic Project</p>
         </div>
-        <button onclick="closeModal('aerostream-modal')" class="text-slate-400 hover:text-slate-600 text-2xl font-bold px-2">&times;</button>
+        <button type="button" aria-label="Close Aerostream details" onclick="closeModal('aerostream-modal')" class="text-slate-400 hover:text-slate-600 text-2xl font-bold px-2">&times;</button>
       </div>
 
       <div class="space-y-6 text-sm text-slate-700">
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">1. Mechanical Architecture &amp; Subsystems</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">1. Mechanical Architecture & Subsystems</h5>
           <p class="leading-relaxed">
-            The project addresses domestic blending inefficiency by consolidating blending and drinking into a single modular vessel[span_95](start_span)[span_95](end_span). The drive base houses a brushless DC (BLDC) motor inside a 3 mm thick recycled 6000-series aluminum chassis with an integrated 2 mm torsional rib matrix[span_96](start_span)[span_96](end_span). Torque transfer is executed via a precision-machined PEEK polymer coupling threaded with an internal M8 concentric tap, ensuring zero rotational eccentricity to extend bearing lifespan[span_97](start_span)[span_97](end_span).
+            The project addresses domestic blending inefficiency by consolidating blending and drinking into a single modular vessel. The drive base houses a compact motor, gearbox, and sealing arrangement designed for serviceability and reduced material use.
           </p>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">2. Anthropometric Jar &amp; Mechanism Design</h5>
-          <p class="leading-relaxed mb-2">Geometric sizing was validated against European anthropometric hand percentiles[span_98](start_span)[span_98](end_span):</p>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">2. Anthropometric Jar & Mechanism Design</h5>
+          <p class="leading-relaxed mb-2">Geometric sizing was validated against European anthropometric hand percentiles:</p>
           <ul class="list-disc list-inside space-y-1 text-slate-600 text-xs font-mono">
-            <li>Jar body: 245 mm height, 100 mm max outer diameter, narrowed to a 75 mm waist for direct single-hand consumption[span_99](start_span)[span_99](end_span).</li>
-            <li>Handle: 110 mm vertical clearance accommodating P95 male metacarpal width (95 mm), 40 mm knuckle gap, and a 32 mm oval cross-section for torque application[span_100](start_span)[span_100](end_span).</li>
-            <li>Docking interface: 15 mm high threaded zone with a twist-and-lock safety interlock, restricting user rotation to 1.5 turns[span_101](start_span)[span_101](end_span).</li>
-            <li>Dual lids: One 35 mm manual vacuum lid with a 45 mm palmar button (5 mm travel stroke) and an ergonomic sport lid with a 28x24 mm elliptical drinking spout offset by 30 mm[span_102](start_span)[span_102](end_span).</li>
+            <li>Jar body: 245 mm height, 100 mm outer diameter, narrowed to 75 mm waist for direct single-hand consumption.</li>
+            <li>Handle: 110 mm vertical clearance for P95 male metacarpal fit, with a 32 mm oval cross-section for torque application.</li>
+            <li>Docking interface: 15 mm threaded zone with twist-and-lock safety interlock, restricting user rotation to 1.5 turns.</li>
+            <li>Dual lids: manual vacuum lid and ergonomic sport lid designed for safe use and effective drinking flow.</li>
           </ul>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">3. DFM, Materials &amp; Surface Treatments</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">3. DFM, Materials & Surface Treatments</h5>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono mt-3">
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
               <span class="font-bold text-slate-900 block mb-1">Rotary Blade Subsystem</span>
-              <span>Material: AISI 316 Stainless (&gt;75% Rec.)</span>[span_103](start_span)[span_103](end_span)<br>
-              <span>Process: Cold Stamped &amp; CNC Sharpened</span>[span_104](start_span)[span_104](end_span)<br>
-              <span>Finish: High-Vacuum PVD Diamond-Like Carbon (DLC)</span>[span_105](start_span)[span_105](end_span)
+              <span>Material: AISI 316 Stainless (&gt;75% Rec.)</span><br>
+              <span>Process: Cold Stamped & CNC Sharpened</span><br>
+              <span>Finish: High-Vacuum PVD Diamond-Like Carbon (DLC)</span>
             </div>
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
-              <span class="font-bold text-slate-900 block mb-1">Chassis &amp; Gaskets</span>
-              <span>Chassis: High-Pressure Die Cast Al 6000 + Anodized</span>[span_106](start_span)[span_106](end_span)<br>
-              <span>Gaskets: Food-Grade Agglomerated Natural Cork</span>[span_107](start_span)[span_107](end_span)<br>
-              <span>Jar: Injection Stretch Blow Molded (ISBM) Tritan Renew</span>[span_108](start_span)[span_108](end_span)
+              <span class="font-bold text-slate-900 block mb-1">Chassis & Gaskets</span>
+              <span>Chassis: High-Pressure Die Cast Al 6000 + Anodized</span><br>
+              <span>Gaskets: Food-Grade Agglomerated Natural Cork</span><br>
+              <span>Jar: Injection Stretch Blow Molded Tritan Renew</span>
             </div>
           </div>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">4. Lifecycle Assessment (LCA) &amp; DFD Optimization</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">4. Lifecycle Assessment (LCA) & DFD Optimization</h5>
           <p class="leading-relaxed">
-            Using SolidWorks Sustainability, a piece-by-piece baseline LCA was mapped on the SMEG BLF01 (500 kg CO2e, 6500 MJ energy, 93% landfill rate)[span_109](start_span)[span_109](end_span). AeroStream directly mitigates these hotspots by replacing virgin cast aluminum with &gt;75% recycled aluminum, eliminating transoceanic resin shipment loops, and implementing Design for Disassembly (DFD)[span_110](start_span)[span_110](end_span). Fastening relies entirely on 4 metric M4 stainless screws accessible beneath friction-fit cork feet, enabling tool-free servicing and magnetic metal extraction during recycling[span_111](start_span)[span_111](end_span).
+            Using SolidWorks Sustainability, a piece-by-piece baseline LCA was mapped against a conventional blender. The concept proposed clearly lower material intensity, simplified disassembly, and improved end-of-life recovery.
           </p>
         </div>
+
         <div>
           <h5 class="text-base font-semibold text-slate-900 mb-2">5. 100% Plastic-Free Packaging Logistics</h5>
           <p class="leading-relaxed">
-            The packaging system eradicates expanded polystyrene (EPS) and single-use PE bags[span_112](start_span)[span_112](end_span). The unit is housed in a 500x350x180 mm FSC-certified Kraft folding box lined with a custom 3 mm molded cellulose pulp tray, achieving full Class A recyclability under European PPWR packaging regulations[span_113](start_span)[span_113](end_span).
+            The packaging system eliminates expanded polystyrene and single-use PE bags. The unit is housed in a FSC-certified Kraft folding box designed for protective transport and reduced volumetric waste.
           </p>
         </div>
       </div>
 
       <div class="mt-8 pt-4 border-t border-slate-100 flex justify-end">
-        <button onclick="closeModal('aerostream-modal')" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-medium hover:bg-slate-800 transition">
+        <button type="button" onclick="closeModal('aerostream-modal')" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-medium hover:bg-slate-800 transition">
           Close Window
         </button>
       </div>
     </div>
   </div>
 
-  <!-- MODAL: KOKY -->
   <div id="koky-modal" class="modal-backdrop fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
-    <div class="bg-white border border-slate-200 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
+    <div role="dialog" aria-modal="true" aria-labelledby="koky-title" class="bg-white border border-slate-200 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
       <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
         <div>
-          <h4 class="text-2xl font-bold text-slate-900">Koky: Engineering Case Study</h4>
-          <p class="text-xs font-mono text-slate-500 mt-1">Lead CAD &amp; Packaging Engineer | Academic Project[span_114](start_span)[span_114](end_span)[span_115](start_span)[span_115](end_span)</p>
+          <h4 id="koky-title" class="text-2xl font-bold text-slate-900">Koky: Engineering Case Study</h4>
+          <p class="text-xs font-mono text-slate-500 mt-1">Lead CAD & Packaging Engineer | Academic Project</p>
         </div>
-        <button onclick="closeModal('koky-modal')" class="text-slate-400 hover:text-slate-600 text-2xl font-bold px-2">&times;</button>
+        <button type="button" aria-label="Close Koky details" onclick="closeModal('koky-modal')" class="text-slate-400 hover:text-slate-600 text-2xl font-bold px-2">&times;</button>
       </div>
 
       <div class="space-y-6 text-sm text-slate-700">
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">1. Functional &amp; Technical Constraints</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">1. Functional & Technical Constraints</h5>
           <p class="leading-relaxed">
-            The goal was to design an impact-resistant, ergonomic cosmetic container for pet care professionals and home users[span_116](start_span)[span_116](end_span). Glass was ruled out to mitigate shattering risks around animals[span_117](start_span)[span_117](end_span). Aluminium was selected for the primary container due to its chemical inertness with fragrance formulations, infinite recyclability, and low wall thickness capabilities[span_118](start_span)[span_118](end_span).
+            The goal was to design an impact-resistant, ergonomic cosmetic container for pet care professionals and home users. Glass was ruled out to mitigate breakage risk, while maintaining premium perceived quality.
           </p>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">2. CAD Surface Modeling &amp; Parametric Tree</h5>
-          <p class="leading-relaxed mb-2">The geometric architecture was developed through precise procedural modeling[span_119](start_span)[span_119](end_span):</p>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">2. CAD Surface Modeling & Parametric Tree</h5>
+          <p class="leading-relaxed mb-2">The geometric architecture was developed through precise procedural modeling:</p>
           <ul class="list-disc list-inside space-y-1 text-slate-600 text-xs font-mono">
-            <li>Base body transitioned from a cylindrical footprint to a faceted gem cross-section using multi-plane guide curves (Loft/Recubrir)[span_120](start_span)[span_120](end_span).</li>
-            <li>Tactile grip area created by two opposed helical trajectories (clockwise and counter-clockwise sweeps) arrayed via circular body patterns and bounded by an extruded cut frame[span_121](start_span)[span_121](end_span).</li>
-            <li>Cap designed via guide curves matching the bottle's hexagonal facets; animal paw identifiers embossed on dual faces using tangent sketch projections (Wrap/Envolver)[span_122](start_span)[span_122](end_span).</li>
-            <li>Threadless coupling achieved through calibrated friction grooves modeled via swept cuts across the mating parts[span_123](start_span)[span_123](end_span).</li>
+            <li>Base body transitioned from a cylindrical footprint to a faceted gem cross-section using multi-plane guide curves.</li>
+            <li>Tactile grip area created by opposed helical trajectories arrayed around the body and bounded by an extruded cut frame.</li>
+            <li>Cap designed via guide curves matching the bottle's hexagonal facets; paw icons embossed on two faces.</li>
+            <li>Threadless coupling achieved through calibrated friction grooves modeled across the mating parts.</li>
           </ul>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">3. DFM, Materials &amp; Disassembly</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">3. DFM, Materials & Disassembly</h5>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono mt-3">
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
               <span class="font-bold text-slate-900 block mb-1">Primary Bottle</span>
-              <span>Impact Extrusion / Deep Drawing</span>[span_124](start_span)[span_124](end_span)<br>
-              <span>Material: Recyclable Aluminum</span>[span_125](start_span)[span_125](end_span)<br>
-              <span>Surface: Anodized / Cold Stamped</span>[span_126](start_span)[span_126](end_span)
+              <span>Impact Extrusion / Deep Drawing</span><br>
+              <span>Material: Recyclable Aluminum</span><br>
+              <span>Surface: Anodized / Cold Stamped</span>
             </div>
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
               <span class="font-bold text-slate-900 block mb-1">Dispenser Subsystem</span>
-              <span>Polypropylene Core (Injection Molded)</span>[span_127](start_span)[span_127](end_span)<br>
-              <span>Aluminium Outer Shroud (CNC Turning)</span>[span_128](start_span)[span_128](end_span)<br>
-              <span>Toolless Separation for Circularity</span>[span_129](start_span)[span_129](end_span)
+              <span>Polypropylene Core (Injection Molded)</span><br>
+              <span>Aluminium Outer Shroud (CNC Turning)</span><br>
+              <span>Toolless Separation for Circularity</span>
             </div>
           </div>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">4. Secondary Packaging &amp; Palletization (ISO 3394)</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">4. Secondary Packaging & Palletization (ISO 3394)</h5>
           <p class="leading-relaxed">
-            The secondary packaging features a rigid hexagonal folding box (190 mm height, 78 mm width) with an interior molded pulp cushioning tray[span_130](start_span)[span_130](end_span). Structured to pack inside 600x400 mm master cartons, achieving 21 units per layer on standard EPAL 1 pallets (1200x800 mm) across 4 stack tiers (84 units total) within transport height limits[span_131](start_span)[span_131](end_span).
+            The secondary packaging features a rigid hexagonal folding box with an interior molded pulp cushioning tray. This keeps the product resistant while fitting a realistic pallet unit and handling flow.
           </p>
         </div>
+
         <div>
           <h5 class="text-base font-semibold text-slate-900 mb-2">5. Physical Prototyping</h5>
           <p class="leading-relaxed">
-            Full-scale functional prototypes were printed using FDM additive manufacturing in PLA[span_132](start_span)[span_132](end_span). Post-processed with metallic primers and selective enamel paints to evaluate hand clearances, single-handed spray ergonomics, and friction closure retention[span_133](start_span)[span_133](end_span).
+            Full-scale functional prototypes were printed using FDM additive manufacturing in PLA. They were post-processed with metallic primers and selective enamel paint to validate form, feel, and assembly logic.
           </p>
         </div>
       </div>
 
       <div class="mt-8 pt-4 border-t border-slate-100 flex justify-end">
-        <button onclick="closeModal('koky-modal')" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-medium hover:bg-slate-800 transition">
+        <button type="button" onclick="closeModal('koky-modal')" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-medium hover:bg-slate-800 transition">
           Close Window
         </button>
       </div>
     </div>
   </div>
 
-  <!-- MODAL: UCACHEW -->
   <div id="ucachew-modal" class="modal-backdrop fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
-    <div class="bg-white border border-slate-200 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
+    <div role="dialog" aria-modal="true" aria-labelledby="ucachew-title" class="bg-white border border-slate-200 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
       <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
         <div>
-          <h4 class="text-2xl font-bold text-slate-900">UCAchew: Engineering Case Study</h4>
-          <p class="text-xs font-mono text-slate-500 mt-1">Product Developer &amp; Material Selection Specialist | Academic Project[span_134](start_span)[span_134](end_span)[span_135](start_span)[span_135](end_span)</p>
+          <h4 id="ucachew-title" class="text-2xl font-bold text-slate-900">UCAchew: Engineering Case Study</h4>
+          <p class="text-xs font-mono text-slate-500 mt-1">Product Developer & Material Selection Specialist | Academic Project</p>
         </div>
-        <button onclick="closeModal('ucachew-modal')" class="text-slate-400 hover:text-slate-600 text-2xl font-bold px-2">&times;</button>
+        <button type="button" aria-label="Close UCAchew details" onclick="closeModal('ucachew-modal')" class="text-slate-400 hover:text-slate-600 text-2xl font-bold px-2">&times;</button>
       </div>
 
       <div class="space-y-6 text-sm text-slate-700">
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">1. Ethological &amp; Biomechanical Constraints</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">1. Ethological & Biomechanical Constraints</h5>
           <p class="leading-relaxed">
-            Canine mastication fulfills critical neuro-behavioral functions, promoting dopamine release in the striatum and reducing cortisol levels[span_136](start_span)[span_136](end_span)[span_137](start_span)[span_137](end_span). Mechanically, the product was sized for medium-sized breeds exerting canine bite forces between 235 and 328 PSI (local peak stresses reaching ~17 MPa at dental contact points)[span_138](start_span)[span_138](end_span)[span_139](start_span)[span_139](end_span). The 200 mm symmetric bone profile integrates R20 flared lobes for front paw stabilization and an ergonomic waist for lateral molar shearing[span_140](start_span)[span_140](end_span)[span_141](start_span)[span_141](end_span)[span_142](start_span)[span_142](end_span).
+            Canine mastication promotes critical neuro-behavioral functions, including play engagement, stress reduction, and enrichment. The toy therefore needed to balance durability, safe chew behavior, and sensory feedback.
           </p>
         </div>
+
         <div>
           <h5 class="text-base font-semibold text-slate-900 mb-2">2. Ashby Material Screening Methodology</h5>
-          <p class="leading-relaxed mb-2">Candidates were mapped across tensile strength vs. elongation, Shore A hardness vs. tear strength, and density vs. cost charts[span_143](start_span)[span_143](end_span):</p>
+          <p class="leading-relaxed mb-2">Candidates were mapped across tensile strength vs elongation, Shore A hardness vs tear strength, and density vs cost charts:</p>
           <ul class="list-disc list-inside space-y-1 text-slate-600 text-xs font-mono">
-            <li>Eliminated Natural Rubber: High tear resistance but degraded by UV exposure and environmental ozone[span_144](start_span)[span_144](end_span).</li>
-            <li>Eliminated Polyamide (Nylon): Excessive hardness (&gt;95 Shore A) risking tooth micro-fractures, brittle behavior, and microplastic shed[span_145](start_span)[span_145](end_span).</li>
-            <li>Eliminated Silicones &amp; Soft TPEs: Shore A &lt;50 resulted in high puncture susceptibility and accelerated fragmentation[span_146](start_span)[span_146](end_span).</li>
-            <li>Selected Material: Aliphatic Ether-based TPU (Shore A80), providing high tear strength (25–35 kN/m) and 300–550% elongation to prevent shear tears[span_147](start_span)[span_147](end_span)[span_148](start_span)[span_148](end_span).</li>
+            <li>Natural Rubber was eliminated because of UV and ozone degradation.</li>
+            <li>Polyamide (Nylon) was eliminated due to excessive hardness, brittle behavior, and microplastic concerns.</li>
+            <li>Silicones and soft TPEs were excluded because low hardness caused puncture susceptibility and accelerated fragmentation.</li>
+            <li>Selected material: aliphatic ether-based TPU (Shore A80), balancing strength, elasticity, and safety.</li>
           </ul>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">3. DFM: Hollow Geometry &amp; Blow Molding</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">3. DFM: Hollow Geometry & Blow Molding</h5>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono mt-3">
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
               <span class="font-bold text-slate-900 block mb-1">Process Parameters</span>
-              <span>Process: Extrusion Blow Molding</span>[span_149](start_span)[span_149](end_span)[span_150](start_span)[span_150](end_span)[span_151](start_span)[span_151](end_span)<br>
-              <span>Processing Temp: 170 °C – 220 °C</span>[span_152](start_span)[span_152](end_span)<br>
-              <span>Wall Thickness: 5.0 mm (Uniform)</span>[span_153](start_span)[span_153](end_span)[span_154](start_span)[span_154](end_span)[span_155](start_span)[span_155](end_span)<br>
-              <span>Raw Material Cost: 5 – 7 €/kg</span>[span_156](start_span)[span_156](end_span)
+              <span>Process: Extrusion Blow Molding</span><br>
+              <span>Processing Temp: 170 °C – 220 °C</span><br>
+              <span>Wall Thickness: 5.0 mm (Uniform)</span><br>
+              <span>Raw Material Cost: 5 – 7 €/kg</span>
             </div>
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
               <span class="font-bold text-slate-900 block mb-1">Functional Attributes</span>
-              <span>Weight Reduction for Throwing Ergonomics</span>[span_157](start_span)[span_157](end_span)<br>
-              <span>Controlled Elastic Damping on Bite</span>[span_158](start_span)[span_158](end_span)<br>
-              <span>Interior Hollow for Treat Dispensing</span>[span_159](start_span)[span_159](end_span)[span_160](start_span)[span_160](end_span)<br>
-              <span>100% Regrind Circularity (Thermoplastic)</span>[span_161](start_span)[span_161](end_span)[span_162](start_span)[span_162](end_span)
+              <span>Weight Reduction for Throwing Ergonomics</span><br>
+              <span>Controlled Elastic Damping on Bite</span><br>
+              <span>Interior Hollow for Treat Dispensing</span><br>
+              <span>100% Regrind Circularity (Thermoplastic)</span>
             </div>
           </div>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">4. Safety Compliance &amp; Canine Sensory Optimization</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">4. Safety Compliance & Canine Sensory Optimization</h5>
           <p class="leading-relaxed">
-            The formulation satisfies European standard EN 71-3 (heavy metal migration limits) and FDA 21 CFR food-contact criteria, free of phthalates, BPA, PVC, chlorine, and latex allergens[span_163](start_span)[span_163](end_span)[span_164](start_span)[span_164](end_span). Chromatic design was optimized for canine dichromatic vision, utilizing yellow and blue pigments that match canine retinal photoreceptor peak sensitivities[span_165](start_span)[span_165](end_span)[span_166](start_span)[span_166](end_span).
+            The formulation was designed to satisfy European EN 71-3 heavy-metal migration limits and FDA 21 CFR food-contact criteria, avoiding phthalates, BPA, PVC, chlorine, and latex allergens.
           </p>
         </div>
       </div>
 
       <div class="mt-8 pt-4 border-t border-slate-100 flex justify-end">
-        <button onclick="closeModal('ucachew-modal')" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-medium hover:bg-slate-800 transition">
+        <button type="button" onclick="closeModal('ucachew-modal')" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-medium hover:bg-slate-800 transition">
           Close Window
         </button>
       </div>
     </div>
   </div>
 
-  <!-- MODAL: FLAT-PACK DIVIDER -->
   <div id="flatpack-modal" class="modal-backdrop fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
-    <div class="bg-white border border-slate-200 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
+    <div role="dialog" aria-modal="true" aria-labelledby="flatpack-title" class="bg-white border border-slate-200 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
       <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
         <div>
-          <h4 class="text-2xl font-bold text-slate-900">Modular Flat-Pack Divider: Engineering Case Study</h4>
-          <p class="text-xs font-mono text-slate-500 mt-1">Design Methodology &amp; Product Engineering | Academic Project[span_167](start_span)[span_167](end_span)</p>
+          <h4 id="flatpack-title" class="text-2xl font-bold text-slate-900">Modular Flat-Pack Divider: Engineering Case Study</h4>
+          <p class="text-xs font-mono text-slate-500 mt-1">Design Methodology & Product Engineering | Academic Project</p>
         </div>
-        <button onclick="closeModal('flatpack-modal')" class="text-slate-400 hover:text-slate-600 text-2xl font-bold px-2">&times;</button>
+        <button type="button" aria-label="Close flat-pack divider details" onclick="closeModal('flatpack-modal')" class="text-slate-400 hover:text-slate-600 text-2xl font-bold px-2">&times;</button>
       </div>
 
       <div class="space-y-6 text-sm text-slate-700">
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">1. Functional &amp; Anthropometric Problem Framing</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">1. Functional & Anthropometric Problem Framing</h5>
           <p class="leading-relaxed">
-            Targeted at compact urban households reconciling remote work with childcare[span_168](start_span)[span_168](end_span). The unit provides physical and visual zoning without permanent structural alterations[span_169](start_span)[span_169](end_span). Anthropometrically configured to support dual ergonomic postures: seated work (70–76 cm desk surface with knee clearances) and standing work (95–115 cm elbow height), stabilized by 550 mm solid timber outriggers with an anti-tip base radius (R300)[span_170](start_span)[span_170](end_span).
+            Targeted at compact urban households reconciling remote work with childcare, the unit provides physical and visual zoning without permanent structural intervention. The concept prioritizes flexibility, modularity, and easy storage.
           </p>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">2. Kinematic Hinge Architecture &amp; Rails</h5>
-          <p class="leading-relaxed mb-2">The articulation mechanism solves spatial flexibility through an integrated structural profile[span_171](start_span)[span_171](end_span):</p>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">2. Kinematic Hinge Architecture & Rails</h5>
+          <p class="leading-relaxed mb-2">The articulation mechanism solves spatial flexibility through an integrated structural profile:</p>
           <ul class="list-disc list-inside space-y-1 text-slate-600 text-xs font-mono">
-            <li>Extruded aluminum guides (802.5 mm length, Ø40/Ø30 mm tubular cross-section) combining panel slide channels with rotating hinge barrels[span_172](start_span)[span_172](end_span).</li>
-            <li>Cylindrical stainless steel core pins acting as continuous axial shafts, expanding folding travel from 240° to a full 360° perimeter rotation[span_173](start_span)[span_173](end_span).</li>
-            <li>Accordion collapse geometry enabling total fold-down without removing panel segments[span_174](start_span)[span_174](end_span).</li>
+            <li>Extruded aluminum guides combining panel slide channels with rotating hinge barrels.</li>
+            <li>Cylindrical stainless steel core pins acting as continuous axial shafts for 360° movement.</li>
+            <li>Accordion collapse geometry enabling total fold-down without removing panel segments.</li>
           </ul>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">3. DFM, Tooling &amp; Modular Fastening Interface</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">3. DFM, Tooling & Modular Fastening Interface</h5>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono mt-3">
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
               <span class="font-bold text-slate-900 block mb-1">Fastening Interface</span>
-              <span>CNC Keyhole Slot Matrix</span>[span_175](start_span)[span_175](end_span)<br>
-              <span>Toolless Drop-and-Lock Accessory Anchors</span>[span_176](start_span)[span_176](end_span)<br>
-              <span>Reversible Panel Faces (Work / Play)</span>[span_177](start_span)[span_177](end_span)<br>
-              <span>800x400 mm Cantilever Table + 63° Stiffener</span>[span_178](start_span)[span_178](end_span)
+              <span>CNC Keyhole Slot Matrix</span><br>
+              <span>Toolless Drop-and-Lock Accessory Anchors</span><br>
+              <span>Reversible Panel Faces (Work / Play)</span><br>
+              <span>800x400 mm Cantilever Table + 63° Stiffener</span>
             </div>
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
-              <span class="font-bold text-slate-900 block mb-1">Materials &amp; Processes</span>
-              <span>Panels: FSC Birch Plywood (CNC Milled)</span>[span_179](start_span)[span_179](end_span)<br>
-              <span>Guides: Extruded Al 6000 + Color Anodized</span>[span_180](start_span)[span_180](end_span)<br>
-              <span>Shafts: Ground AISI 304 Stainless Rods</span>[span_181](start_span)[span_181](end_span)<br>
-              <span>Bases: Solid Hardwood CNC Turned/Routed</span>[span_182](start_span)[span_182](end_span)
+              <span class="font-bold text-slate-900 block mb-1">Materials & Processes</span>
+              <span>Panels: FSC Birch Plywood (CNC Milled)</span><br>
+              <span>Guides: Extruded Al 6000 + Color Anodized</span><br>
+              <span>Shafts: Ground AISI 304 Stainless Rods</span><br>
+              <span>Bases: Solid Hardwood CNC Turned/Routed</span>
             </div>
           </div>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">4. Flat-Pack Logistics &amp; EPAL 1 Palletization</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">4. Flat-Pack Logistics & EPAL 1 Palletization</h5>
           <p class="leading-relaxed">
-            The kit is engineered to pack strictly into a 660x920x574 mm corrugated carton (600 kg BCT rating) arranged in 5 horizontal layers: Layer 1 stores 9 stacked plywood panels (124 mm); Layer 2 nests 2 packs of aluminum hinge-rails (110 mm); Layer 3 contains 3 timber support feet (180 mm); Layer 4 holds the stainless steel hinge pins inside rigid protective tubes (90 mm); and Layer 5 provides a 50 mm impact-absorbing top cushion[span_183](start_span)[span_183](end_span). Packaged to maximize volume utilization on standard EUR/EPAL 1 pallets (1200x800 mm) with a 3-tier stacking threshold during freight transit[span_184](start_span)[span_184](end_span).
+            The kit is engineered to pack into a 660x920x574 mm corrugated carton arranged in five horizontal layers, balancing protection, stackability, and efficient delivery. This keeps the product practical for domestic installation and shipping.
           </p>
         </div>
+
         <div>
-          <h5 class="text-base font-semibold text-slate-900 mb-2">5. User Testing &amp; Design Iteration</h5>
+          <h5 class="text-base font-semibold text-slate-900 mb-2">5. User Testing & Design Iteration</h5>
           <p class="leading-relaxed">
-            A qualitative focus group session evaluated early prototypes against domestic usability criteria[span_185](start_span)[span_185](end_span). Key insights drove the widening of the hinge barrel diameter by 10 cm to eliminate bind-up during 360° rotation, the standardization of a single keyhole grid across all modular panels, and the addition of rubber-treaded retractable casters on the base outriggers[span_186](start_span)[span_186](end_span).
+            A qualitative focus group evaluated early prototypes against domestic usability criteria. Key insights drove hinge widening and a more intuitive locking interaction to improve everyday use.
           </p>
         </div>
       </div>
 
       <div class="mt-8 pt-4 border-t border-slate-100 flex justify-end">
-        <button onclick="closeModal('flatpack-modal')" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-medium hover:bg-slate-800 transition">
+        <button type="button" onclick="closeModal('flatpack-modal')" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-medium hover:bg-slate-800 transition">
           Close Window
         </button>
       </div>
     </div>
   </div>
 
-  <!-- SCRIPT PARA GESTIÓN DE MODALES -->
   <script>
     function openModal(id) {
       const modal = document.getElementById(id);
@@ -668,17 +666,15 @@
       }
     }
 
-    // Cerrar al hacer clic fuera del cuadro blanco
-    window.addEventListener('click', function(e) {
-      if (e.target.classList.contains('modal-backdrop')) {
-        e.target.classList.add('hidden');
+    window.addEventListener('click', function (event) {
+      if (event.target.classList.contains('modal-backdrop')) {
+        event.target.classList.add('hidden');
         document.body.classList.remove('overflow-hidden');
       }
     });
 
-    // Cerrar con la tecla Escape
-    window.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
         document.querySelectorAll('.modal-backdrop').forEach(modal => {
           modal.classList.add('hidden');
         });
@@ -686,6 +682,5 @@
       }
     });
   </script>
-
 </body>
 </html>
