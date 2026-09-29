@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pablo de la Torre | Industrial Design & Mechanical Engineer</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f8fafc',
+              900: '#0f172a',
+              accent: '#2563eb'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-semibold tracking-tight text-slate-900 hover:text-blue-600 transition">Pablo de la Torre</a>
+      <nav class="flex space-x-6 text-sm font-medium text-slate-600">
+        <a href="#projects" class="hover:text-slate-900 transition">Projects</a>
+        <a href="#skills" class="hover:text-slate-900 transition">Skills</a>
+        <a href="#about" class="hover:text-slate-900 transition">About</a>
+        <a href="mailto:pablodelatorrearagon@gmail.com" class="text-blue-600 hover:text-blue-700 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-5xl mx-auto px-6 pt-24 pb-16">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-blue-50 text-blue-700 border border-blue-200 mb-6">
+        <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+        Seeking Product Design / Hardware Internships (2026-2027)
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-950 mb-6 leading-tight">
+        Mechanical Design Engineer specializing in Advanced CAD, DFM & Eco-Design.
+      </h1>
+      <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+        Industrial Design & Product Development Engineering student at Universidad de Cádiz. Bridging complex solid & surface modeling (SolidWorks, CATIA V5) with manufacturing feasibility, lifecycle assessment (LCA), and AI-driven CAD automation.
+      </p>
+      <div class="flex flex-wrap gap-4 items-center font-mono text-sm">
+        <a href="#projects" class="px-5 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition font-sans font-medium">Explore Projects</a>
+        <a href="https://linkedin.com/in/pablodita" target="_blank" class="px-5 py-2.5 border border-slate-300 rounded-lg hover:bg-slate-100 transition font-sans font-medium">LinkedIn</a>
+        <a href="mailto:pablodelatorrearagon@gmail.com" class="px-5 py-2.5 border border-slate-300 rounded-lg hover:bg-slate-100 transition font-sans font-medium">Email Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
+    <div class="flex items-baseline justify-between mb-12">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Featured Engineering Projects</h2>
+      <span class="font-mono text-xs text-slate-500">04 Selected Cases</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- PROJECT 1: CAD LLM Automation (TFG) -->
+      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between">
+        <div class="p-6">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
+            <span>BACHELOR'S THESIS</span>
+            <span>2026 — PRESENT</span>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">Automated CAD Synthesis via KBE & Local LLM</h3>
+          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+            Developing an automated Knowledge-Based Engineering system integrating local LLMs with Model Context Protocol (MCP) servers to translate natural language mechanical parameters into SolidWorks parametric geometry.
+          </p>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600 mb-6">
+            <span class="bg-slate-100 px-2 py-0.5 rounded">SolidWorks API</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">MCP Server</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Python</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Local LLM</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
+          <span class="text-xs font-mono text-slate-500">In Active Development</span>
+          <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-700">Read Research Note &rarr;</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: Blender System (AeroStream) -->
+      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between">
+        <div class="p-6">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
+            <span>PRODUCT DESIGN & ECO-DESIGN</span>
+            <span>2026</span>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">AeroStream: Eco-Designed Portable Blender</h3>
+          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+            End-to-end electro-mechanical development of a modular blender featuring a twist-and-lock docking interface, manual vacuum preservation, DFD architecture with standard M4 fasteners, and LCA via SolidWorks Sustainability.
+          </p>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600 mb-6">
+            <span class="bg-slate-100 px-2 py-0.5 rounded">SolidWorks</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Sustainability (LCA)</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">DFD / DFM</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">GD&T</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
+          <span class="text-xs font-mono text-slate-500">Complete CAD & Drawings</span>
+          <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-700">View Drawings & ACV &rarr;</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 3: Koky Packaging -->
+      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between">
+        <div class="p-6">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
+            <span>SURFACE MODELING & MECHANICS</span>
+            <span>2025</span>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">Koky: Luxury Packaging & Mechanisms</h3>
+          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+            Primary, secondary, and tertiary packaging development. Executed complex faceted GSD surfacing in CATIA V5, engineered functional snap-fit clips, and validated kinematic assembly through functional FDM 3D printing.
+          </p>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600 mb-6">
+            <span class="bg-slate-100 px-2 py-0.5 rounded">CATIA V5 (GSD)</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Snap-Fits</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">FDM Prototyping</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">ISO Drawings</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
+          <span class="text-xs font-mono text-slate-500">Physical Prototype Tested</span>
+          <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-700">View Case Study &rarr;</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 4: UCAchew Canine Toy -->
+      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between">
+        <div class="p-6">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
+            <span>MATERIALS & PROCESS OPTIMIZATION</span>
+            <span>2025</span>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">UCAchew: Material Selection & Blow Molding</h3>
+          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+            Product engineering driven by mechanical stress and tear resistance criteria (5.5–8 MPa). Selected TPU Shore A80 and optimized tool parting lines, uniform wall thicknesses, and release angles for extrusion blow molding.
+          </p>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600 mb-6">
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Blow Molding</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">TPU Shore A80</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">FEA Simulation</span>
+            <span class="bg-slate-100 px-2 py-0.5 rounded">Tooling DFM</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
+          <span class="text-xs font-mono text-slate-500">DFM Feasibility Report</span>
+          <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-700">View Case Study &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
+    <h2 class="text-2xl font-bold tracking-tight text-slate-900 mb-8">Technical Proficiencies</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 font-mono text-xs">
+      <div class="p-5 bg-white border border-slate-200 rounded-xl">
+        <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">3D CAD & Drafting</h4>
+        <ul class="space-y-1.5 text-slate-600">
+          <li>SolidWorks (Parametric)</li>
+          <li>CATIA V5 (Part, Assembly, GSD)</li>
+          <li>AutoCAD 2D (ISO/DIN)</li>
+          <li>GD&T Tolerancing</li>
+        </ul>
+      </div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl">
+        <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">Engineering & DFM</h4>
+        <ul class="space-y-1.5 text-slate-600">
+          <li>Injection & Blow Molding</li>
+          <li>High-Pressure Die Casting</li>
+          <li>Design for Disassembly (DFD)</li>
+          <li>SolidWorks Sustainability / LCA</li>
+        </ul>
+      </div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl">
+        <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">Prototyping & AI</h4>
+        <ul class="space-y-1.5 text-slate-600">
+          <li>FDM 3D Printing (PLA, TPU)</li>
+          <li>Kinematic & Fit Validation</li>
+          <li>KBE CAD Automation</li>
+          <li>Model Context Protocol (MCP)</li>
+        </ul>
+      </div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl">
+        <h4 class="font-bold text-slate-900 mb-3 font-sans text-sm">Standards & Languages</h4>
+        <ul class="space-y-1.5 text-slate-600">
+          <li>CE Marking Documentation</li>
+          <li>English: C1 (Professional)</li>
+          <li>Spanish: Native</li>
+          <li>French: B1 | German: A2</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="max-w-5xl mx-auto px-6 py-12 flex flex-col sm:flex-row justify-between items-center text-sm text-slate-500 gap-4">
+      <p>&copy; 2026 Pablo de la Torre Aragón. Crafted for engineering reviews.</p>
+      <div class="flex gap-6 font-mono text-xs">
+        <a href="https://linkedin.com/in/pablodita" target="_blank" class="hover:text-slate-900 transition">LinkedIn</a>
+        <a href="mailto:pablodelatorrearagon@gmail.com" class="hover:text-slate-900 transition">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
