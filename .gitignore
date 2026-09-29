@@ -1,0 +1,5 @@
+node_modules/
+*.pdf
+__pycache__/
+extract_assets.py
+optimize_images.py
