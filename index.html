@@ -123,29 +123,135 @@
         </div>
       </article>
 
-      <!-- PROJECT 3: Koky Packaging -->
-      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between">
-        <div class="p-6">
-          <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
-            <span>SURFACE MODELING & MECHANICS</span>
-            <span>2025</span>
+      <!-- KOKY CASE STUDY CARD -->
+<article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between shadow-sm">
+  <div class="p-6">
+    <div class="flex items-center justify-between text-xs font-mono text-slate-500 mb-3">
+      <span>PACKAGING & SURFACE ENGINEERING</span>
+      <span>MAY 2025</span>
+    </div>
+    <h3 class="text-xl font-semibold text-slate-900 mb-2">Koky: Luxury Pet Fragrance & Mechanisms</h3>
+    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+      End-to-end development of an aluminum cosmetic container (150 ml), friction-fit cap mechanism, and hexagonal secondary packaging. Integrates advanced parametric modeling, DFM for impact extrusion, and ISO 3394 pallet logistics.
+    </p>
+
+    <!-- Key Metrics Grid -->
+    <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-slate-50 rounded-lg border border-slate-100 mb-4 font-mono text-center">
+      <div>
+        <span class="block text-xs text-slate-400">VOLUME</span>
+        <span class="text-sm font-semibold text-slate-800">150 ml</span>
+      </div>
+      <div>
+        <span class="block text-xs text-slate-400">MATERIAL</span>
+        <span class="text-sm font-semibold text-slate-800">Aluminium</span>
+      </div>
+      <div>
+        <span class="block text-xs text-slate-400">PALLET UNIT</span>
+        <span class="text-sm font-semibold text-slate-800">84 / EPAL</span>
+      </div>
+    </div>
+
+    <!-- Technical highlights bullet points -->
+    <ul class="text-xs text-slate-600 space-y-1.5 mb-6 list-disc list-inside">
+      <li>Bi-directional helical sweep pattern cut for diamond tactile gripping.</li>
+      <li>Threadless friction-fit cap mechanism with laser-etched variant iconography.</li>
+      <li>Separable PP pump core and aluminum collar to prevent recycling contamination.</li>
+    </ul>
+
+    <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600">
+      <span class="bg-slate-100 px-2 py-0.5 rounded">CAD Lofting & Sweeps</span>
+      <span class="bg-slate-100 px-2 py-0.5 rounded">Impact Extrusion</span>
+      <span class="bg-slate-100 px-2 py-0.5 rounded">FDM Prototyping</span>
+      <span class="bg-slate-100 px-2 py-0.5 rounded">EPAL Logistics</span>
+    </div>
+  </div>
+
+  <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
+    <span class="text-xs font-mono text-slate-500">Physical Prototypes Tested</span>
+    <button onclick="document.getElementById('koky-modal').classList.remove('hidden')" class="text-sm font-medium text-blue-600 hover:text-blue-700">
+      View Engineering Details &rarr;
+    </button>
+  </div>
+</article>
+
+<!-- KOKY DETAILED ENGINEERING MODAL -->
+<div id="koky-modal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+  <div class="bg-white border border-slate-200 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl">
+    <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
+      <div>
+        <h4 class="text-2xl font-bold text-slate-900">Koky: Engineering Case Study</h4>
+        <p class="text-xs font-mono text-slate-500 mt-1">Lead CAD & Packaging Engineer | Academic Project</p>
+      </div>
+      <button onclick="document.getElementById('koky-modal').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 text-2xl font-bold px-2">&times;</button>
+    </div>
+
+    <div class="space-y-6 text-sm text-slate-700">
+      <!-- Section 1 -->
+      <div>
+        <h5 class="text-base font-semibold text-slate-900 mb-2">1. Functional & Technical Constraints</h5>
+        <p class="leading-relaxed">
+          The goal was to design an impact-resistant, ergonomic cosmetic container for pet care professionals and home users. Glass was ruled out to mitigate shattering risks around animals. Aluminium was selected for the primary container due to its chemical inertness with fragrance formulations, infinite recyclability, and low wall thickness capabilities.
+        </p>
+      </div>
+
+      <!-- Section 2 -->
+      <div>
+        <h5 class="text-base font-semibold text-slate-900 mb-2">2. CAD Surface Modeling & Parametric Tree</h5>
+        <p class="leading-relaxed mb-2">
+          The geometric architecture was developed through precise procedural modeling:
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-slate-600 text-xs font-mono">
+          <li>Base body transitioned from a cylindrical footprint to a faceted gem cross-section using multi-plane guide curves (Loft/Recubrir).</li>
+          <li>Tactile grip area created by two opposed helical trajectories (clockwise and counter-clockwise sweeps) arrayed via circular body patterns and bounded by an extruded cut frame.</li>
+          <li>Cap designed via guide curves matching the bottle's hexagonal facets; animal paw identifiers embossed on dual faces using tangent sketch projections (Wrap/Envolver).</li>
+          <li>Threadless coupling achieved through calibrated friction grooves modeled via swept cuts across the mating parts.</li>
+        </ul>
+      </div>
+
+      <!-- Section 3 -->
+      <div>
+        <h5 class="text-base font-semibold text-slate-900 mb-2">3. DFM, Materials & Disassembly</h5>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono mt-3">
+          <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
+            <span class="font-bold text-slate-900 block mb-1">Primary Bottle</span>
+            <span>Impact Extrusion / Deep Drawing</span><br>
+            <span>Material: Recyclable Aluminum</span><br>
+            <span>Surface: Anodized / Cold Stamped</span>
           </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">Koky: Luxury Packaging & Mechanisms</h3>
-          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-            Primary, secondary, and tertiary packaging development. Executed complex faceted GSD surfacing in CATIA V5, engineered functional snap-fit clips, and validated kinematic assembly through functional FDM 3D printing.
-          </p>
-          <div class="flex flex-wrap gap-1.5 font-mono text-xs text-slate-600 mb-6">
-            <span class="bg-slate-100 px-2 py-0.5 rounded">CATIA V5 (GSD)</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">Snap-Fits</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">FDM Prototyping</span>
-            <span class="bg-slate-100 px-2 py-0.5 rounded">ISO Drawings</span>
+          <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
+            <span class="font-bold text-slate-900 block mb-1">Dispenser Subsystem</span>
+            <span>Polypropylene Core (Injection Molded)</span><br>
+            <span>Aluminium Outer Shroud (CNC Turning)</span><br>
+            <span>Toolless Separation for Circularity</span>
           </div>
         </div>
-        <div class="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 flex justify-between items-center">
-          <span class="text-xs font-mono text-slate-500">Physical Prototype Tested</span>
-          <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-700">View Case Study &rarr;</a>
-        </div>
-      </article>
+      </div>
+
+      <!-- Section 4 -->
+      <div>
+        <h5 class="text-base font-semibold text-slate-900 mb-2">4. Secondary Packaging & Palletization (ISO 3394)</h5>
+        <p class="leading-relaxed">
+          The secondary packaging features a rigid hexagonal folding box (190 mm height, 78 mm width) with an interior molded pulp cushioning tray. Structured to pack inside 600x400 mm master cartons, achieving 21 units per layer on standard EPAL 1 pallets (1200x800 mm) across 4 stack tiers (84 units total) within transport height limits.
+        </p>
+      </div>
+
+      <!-- Section 5 -->
+      <div>
+        <h5 class="text-base font-semibold text-slate-900 mb-2">5. Physical Prototyping</h5>
+        <p class="leading-relaxed">
+          Full-scale functional prototypes were printed using FDM additive manufacturing in PLA. Post-processed with metallic primers and selective enamel paints to evaluate hand clearances, single-handed spray ergonomics, and friction closure retention.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-4 border-t border-slate-100 flex justify-end">
+      <button onclick="document.getElementById('koky-modal').classList.add('hidden')" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-medium hover:bg-slate-800 transition">
+        Close Window
+      </button>
+    </div>
+  </div>
+</div>
+
 
       <!-- PROJECT 4: UCAchew Canine Toy -->
       <article class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-slate-400 transition flex flex-col justify-between">
@@ -222,7 +328,7 @@
     <div class="max-w-5xl mx-auto px-6 py-12 flex flex-col sm:flex-row justify-between items-center text-sm text-slate-500 gap-4">
       <p>&copy; 2026 Pablo de la Torre Aragón. Crafted for engineering reviews.</p>
       <div class="flex gap-6 font-mono text-xs">
-        <a href="https://linkedin.com/in/pablodita" target="_blank" class="hover:text-slate-900 transition">LinkedIn</a>
+        <a href="https://linkedin.com/in/pablodlta" target="_blank" class="hover:text-slate-900 transition">LinkedIn</a>
         <a href="mailto:pablodelatorrearagon@gmail.com" class="hover:text-slate-900 transition">Email</a>
       </div>
     </div>
