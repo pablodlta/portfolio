@@ -1,7 +1,7 @@
-# Pablo de la Torre Aragón — Industrial Design & Mechanical Engineering Portfolio
+# Pablo de la Torre Aragón — Industrial Design & Product Development Engineering Portfolio
 
-> **Hardware Product Design & Mechanical Engineering Portfolio**  
-> *Undergraduate at Universidad de Cádiz (Escuela Superior de Ingeniería - ESI)*  
+> **Industrial Design & Product Development Engineering Portfolio**  
+> *Undergraduate at Universidad de Cádiz, Escuela Superior de Ingeniería*  
 > *Specializing in Advanced 3D CAD Surfacing, DFM Tooling, Eco-Design LCA, and AI-Driven CAD Synthesis.*
 
 ---
