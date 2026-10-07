@@ -275,30 +275,14 @@
           </div>
         </article>
 
-        <!-- ================= CARD 2: Koky Cosmetic Dispenser (with Google model-viewer 3D) ================= -->
+        <!-- ================= CARD 2: Koky Cosmetic Dispenser ================= -->
         <article class="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-400 hover:shadow-md transition-all flex flex-col justify-between">
-          <!-- Interactive 3D Model / Fallback Visual -->
+          <!-- Visual Media Container -->
           <div class="relative w-full h-56 bg-slate-100 border-b border-slate-200 overflow-hidden">
-            <model-viewer
-              src="assets/models/koky-bottle.glb"
-              poster="assets/img/koky-render-main.webp"
-              alt="Interactive 3D CAD model of Koky aluminum cosmetic dispenser"
-              auto-rotate
-              camera-controls
-              touch-action="pan-y"
-              shadow-intensity="1"
-              interaction-prompt="none"
-              class="w-full h-full bg-slate-50">
-              <div slot="poster" class="w-full h-full">
-                <picture>
-                  <source srcset="assets/img/koky-render-main.webp" type="image/webp">
-                  <img src="assets/img/koky-render-main.jpg" alt="Koky luxury aluminum cosmetic dispenser CAD rendering" class="w-full h-full object-cover">
-                </picture>
-              </div>
-              <div slot="error" class="absolute inset-0 flex items-center justify-center bg-slate-900/70 text-white p-4 text-center font-mono text-xs">
-                <span>3D preview unavailable offline. Displaying high-resolution CAD render.</span>
-              </div>
-            </model-viewer>
+            <picture>
+              <source srcset="assets/img/koky-render-main.webp" type="image/webp">
+              <img src="assets/img/koky-render-main.jpg" alt="Koky luxury aluminum cosmetic dispenser CAD rendering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </picture>
 
             <!-- CMF Floating Indicators -->
             <div class="absolute bottom-3 left-3 flex flex-wrap gap-1.5 z-10" aria-label="Color, Material, Finish Specifications">
@@ -1250,6 +1234,27 @@
           <p class="leading-relaxed">
             The secondary rigid hexagonal box utilizes molded pulp inserts that lock the aluminum canister securely during transit. Sized to match European standard EPAL pallets (1200 x 800 mm), yielding 84 units per layer with 0% volumetric overhang, reducing shipping footprint by 18% over conventional cylindrical packaging.
           </p>
+        </section>
+
+        <!-- Interactive 3D WebGL Inspection -->
+        <section class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xs font-bold text-slate-900 font-mono uppercase tracking-wider">Interactive 3D CAD Inspection</h3>
+            <span class="text-[11px] font-mono text-slate-500">Drag to rotate • Pinch / Scroll to zoom</span>
+          </div>
+          <div class="w-full h-72 bg-white rounded-lg overflow-hidden border border-slate-200">
+            <model-viewer
+              src="assets/models/koky-bottle.glb"
+              poster="assets/img/koky-render-main.webp"
+              alt="Interactive 3D CAD model of Koky aluminum cosmetic dispenser"
+              auto-rotate
+              camera-controls
+              touch-action="pan-y"
+              shadow-intensity="1"
+              interaction-prompt="none"
+              class="w-full h-full">
+            </model-viewer>
+          </div>
         </section>
       </div>
 
