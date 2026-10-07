@@ -1,0 +1,158 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{textcomp}
+\usepackage{lmodern}
+%---------- TYPOGRAPHY + LAYOUT ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\usepackage[left=0.50in,right=0.50in,top=0.38in,bottom=0.38in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+%---------- COLOR + LINKS ----------
+\definecolor{accent}{HTML}{1F4E79}
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent, citecolor=accent}
+\urlstyle{same}
+
+%---------- PAGE STYLE ----------
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%---------- LIST TUNING ----------
+\setlist[itemize]{topsep=1pt, partopsep=0pt, parsep=0pt, itemsep=0pt}
+
+%---------- SECTION STYLE ----------
+\titleformat{\section}{\bfseries\scshape\raggedright\large\color{accent}}{}{0em}{}[\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{4.5pt}{2pt}
+
+% Comandos personalizados para estructuracion limpia
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-1.5pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0.5pt}\item
+    \begin{tabular*}{0.99\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2.5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{0.5pt}\item
+    \begin{tabular*}{0.99\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+      \small#1 & \small#2 \\
+    \end{tabular*}\vspace{-2.5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}, itemsep=0.5pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textbullet, itemsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+  {\Huge\bfseries\scshape Pablo de la Torre Aragón}\\[2pt]
+  {\small Cádiz, Spain \enspace$|$\enspace +34 616 286 567 \enspace$|$\enspace
+  \href{mailto:pablodelatorrearagon@gmail.com}{pablodelatorrearagon@gmail.com}}\\[1.5pt]
+  {\small \href{https://linkedin.com/in/pablodlta}{linkedin.com/in/pablodlta} \enspace$|$\enspace
+  \href{https://github.com/pablodlta}{github.com/pablodlta} \enspace$|$\enspace
+  \href{https://pablodlta.github.io/portfolio}{Portfolio: pablodlta.github.io/portfolio}}
+\end{center}
+\vspace{-6pt}
+
+%---------- EDUCACION ----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad de Cádiz, School of Engineering (ESI)}{Cádiz, Spain}
+      {B.S. in Industrial Design and Product Development Engineering}{Expected Graduation: July 2027}
+      \resumeItemListStart
+        \resumeItem{Status: Final Academic Year (60~ECTS remaining, completing Bachelor's Thesis \& core electives).}
+        \resumeItem{Continuing Education: Admitted into Master's Degree Program (Commencing Fall 2027 -- Returning Student).}
+        \resumeItem{Honors \& Coursework: Student Collaborator (3~ECTS), Global Resilience Seminar (3~ECTS), Industrial Internship (12~ECTS) $|$ Mechanical Engineering, Materials Science, Graphic Engineering, Manufacturing Processes.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%---------- HABILIDADES TECNICAS ----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, parsep=0pt]
+    \small{\item{
+     \textbf{3D CAD \& Surfacing:} SolidWorks (Parametric Assemblies \& Advanced Surfacing), CATIA V5 (Part Design, Assembly, GSD), AutoCAD 2D. \\
+     \textbf{DFM/DFA \& Tooling Design:} Plastic Injection Molding, High-Pressure Die Casting, Extrusion Blow Molding, Aluminum Extrusion, Deep Drawing, CNC Machining, Split-Die Tooling, Draft/Parting Optimization. \\
+     \textbf{Mechanisms \& Analysis:} Kinematic Hinges, Tolerance Stack-up (Worst-Case/RSS), GD\&T (ISO 1101 / ASME Y14.5), FEA Stress Analysis, Ashby Material Selection (CES EduPack), Life Cycle Assessment (SolidWorks Sustainability). \\
+     \textbf{Computational Hardware \& AI:} Knowledge-Based Engineering (KBE), Model Context Protocol (MCP v2), AST JSON Compilation, C\# .NET COM STA Interop, Python win32com, Local LLMs (Ollama / Qwen 2.5 Coder 7B). \\
+     \textbf{Prototyping, CMF \& Testing:} FDM Rapid Prototyping (PLA, TPU Shore A80), CMF Callouts (VDI 3400, Ra Roughness), PVD DLC Coatings, Automotive Spray Finishing, Functional Ergonomic Validation. \\
+     \textbf{Standards \& Regulatory:} European CE Marking, Machinery Directive (2006/42/EC), Low Voltage Directive (2014/35/EU), EN ISO 12100 Risk Files, EN 71-3, FDA 21 CFR \S177.2600, ISO 3394 Palletization. \\
+     \textbf{Languages:} Spanish (Native), English (C1 -- Advanced Professional / Aptis Certified), French (A2 -- Pre-Intermediate), German (A1 -- Beginner).
+    }}
+ \end{itemize}
+ \vspace{-4pt}
+
+%---------- EXPERIENCIA PROFESIONAL ----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Industrial Engineering Intern -- Technical Documentation \& CE Marking}{Cádiz, Spain}
+      {Extracurricular Industrial Internship (12 ECTS)}{Summer 2026}
+      \resumeItemListStart
+        \resumeItem{Validated 100\% regulatory compliance for new production lines by authoring Technical Construction Files, Declarations of Conformity, and ISO manufacturing instructions under European Directives (2006/42/EC Machinery, 2014/35/EU LVD).}
+        \resumeItem{Mitigated operational hazards across mechanical and electrical product architectures by conducting comprehensive risk hazard assessments (EN ISO 12100) and defining mandatory safety interlock criteria.}
+        \resumeItem{Accelerated factory-floor design sign-off by leading cross-functional reviews between engineering and operations, eliminating documentation non-conformances prior to CE dossier submission.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%---------- PROYECTOS DE INGENIERIA ----------
+\section{Hardware \& Computational Engineering Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{SolidPilot: Autonomous CAD Synthesis (KBE \& MCP)} $|$ \emph{SolidWorks, Python, C\#}}{2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered a decoupled 4-layer KBE architecture translating natural-language design intent into native parametric SolidWorks solids, achieving 100\% build pass rate across 158 CI tests and $<$0.02\% volumetric rebuild error on 9 production drawings.}
+        \resumeItem{Eliminated COM threading deadlocks and memory leaks by developing an isolated C\# .NET 4.8 STA host service communicating via an HTTP REST loop with idempotency state tracking.}
+        \resumeItem{Preserved corporate IP confidentiality with zero recurring API costs by deploying a distributed 2-node LAN inference pipeline hosting a local quantized Qwen 2.5 Coder 7B model emitting schema-validated Feature Graph IR JSON.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{AeroStream: Eco-Designed Modular Blender System} $|$ \emph{SolidWorks, DFM/DFA, LCA, GD\&T}}{2026}
+      \resumeItemListStart
+        \resumeItem{Reduced product carbon footprint by 42\% and eutrophication by 65\% by executing comparative LCAs in SolidWorks Sustainability and engineering a modular architecture using recyclable Tritan\texttrademark{} Renew and die-cast Al 6061-T6.}
+        \resumeItem{Enabled complete circular material recovery in $<$4 minutes by applying Design for Disassembly (DFD) with uniform reversible M4 fasteners; specified an injection PEEK drive core (250\textdegree{}C, VDI 3400 Ref 18) and PVD DLC blades ($>$2500 HV).}
+        \resumeItem{Delivered complete production package comprising 13 ISO/DIN manufacturing drawing sheets with comprehensive GD\&T, 110 mm P95 hand clearance ergonomics, and 100\% plastic-free molded cellulose packaging.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Modular Flat-Pack Partition \& Telework Workstation} $|$ \emph{CATIA V5, SolidWorks, CNC, Extrusion}}{2025}
+      \resumeItemListStart
+        \resumeItem{Engineered a continuous 360\textdegree{} articulating acoustic partition by designing custom 6063-T6 aluminum hot extrusion profiles integrating both edge-capping geometry and precision barrel hinge housings with AISI 304 stainless steel pins (h7 slip fit).}
+        \resumeItem{Optimized load distribution for drop-and-lock cantilever desks via 5-axis CNC-milled keyhole matrix arrays in 15 mm Birch Plywood ($\pm$0.2 mm fit, 63\textdegree{} brace); designed 5-layer flat-pack carton kit conforming to EPAL 1 standards with zero overhang.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Koky: Luxury Cosmetic Packaging \& Dispenser Ecosystem} $|$ \emph{CATIA V5 (GSD), Deep Drawing, CMF}}{2025}
+      \resumeItemListStart
+        \resumeItem{Engineered a premium 150 ml packaging ecosystem featuring a 0.8 mm wall deep-drawn Al 6061-T6 canister with dual helical grip sweeps modeled in CATIA V5 Generative Shape Design (GSD).}
+        \resumeItem{Validated threadless friction-fit cap retention by fabricating 1:1 functional PLA FDM prototypes with automotive metallic enamel; achieved 84 units/layer with 0\% overhang on EPAL pallets (ISO 3394, -18\% transport volume).}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{UCAchew: Biomechanical Canine Toy \& Material Analysis} $|$ \emph{Ashby Selection, Blow Molding, TPU}}{2025}
+      \resumeItemListStart
+        \resumeItem{Eliminated structural failure and canine dental injury hazards under 235--328 PSI mastication loads by conducting Ashby multi-objective screening to select Aliphatic Ether TPU (Shore A80, 45 MPa tensile strength, $>$85 kN/m tear resistance).}
+        \resumeItem{Optimized split-die extrusion blow molding tooling by engineering a uniform 5.0 mm wall hollow cavity with calibrated pinch-off zones and draft angles, certified to EN 71-3 heavy metal migration and FDA 21 CFR \S177.2600.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}
