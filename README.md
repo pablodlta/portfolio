@@ -17,6 +17,7 @@ The portfolio presents end-to-end hardware deliverables: parametric 3D CAD surfa
 ## 🚀 Key Highlights & Projects
 
 ### 1. Automated CAD Synthesis via KBE & Local LLM (Bachelor's Thesis, 2026–Present)
+* **Academic Affiliation:** Bachelor's Thesis (TFG) & Curricular Practices (12 ECTS) at **GOAL Lab** ([TIC-259](https://tic259.uca.es/)), Escuela Superior de Ingeniería (ESI), Universidad de Cádiz.
 * **Tooling:** SolidWorks COM API (`win32com`), Python 3.12, Model Context Protocol (MCP), Local LLM (Ollama / DeepSeek).
 * **Architecture:** Translates mechanical design intent in natural language into strictly validated JSON AST schemas, enforces ISO clearance/draft rules via an MCP server, and generates native parametric SolidWorks parts with editable FeatureManager history trees.
 * **Validation:** Sub-3.2s inference and 100% rebuildable parametric topology.

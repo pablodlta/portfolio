@@ -8,7 +8,7 @@
 \usepackage{lmodern}
 \usepackage{microtype}
 
-\usepackage[left=0.50in,right=0.50in,top=0.38in,bottom=0.38in]{geometry}
+\usepackage[left=0.50in,right=0.50in,top=0.35in,bottom=0.35in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{tabularx}
@@ -31,7 +31,7 @@
 
 %---------- SECTION STYLE ----------
 \titleformat{\section}{\bfseries\scshape\raggedright\large\color{accent}}{}{0em}{}[\color{accent}\titlerule]
-\titlespacing*{\section}{0pt}{4.5pt}{2pt}
+\titlespacing*{\section}{0pt}{3.5pt}{1.5pt}
 
 % Comandos personalizados para estructuracion limpia
 \newcommand{\resumeItem}[1]{
@@ -80,7 +80,7 @@
       \resumeItemListStart
         \resumeItem{Status: Final Academic Year (60~ECTS remaining, completing Bachelor's Thesis \& core electives).}
         \resumeItem{Continuing Education: Admitted into Master's Degree Program (Commencing Fall 2027 -- Returning Student).}
-        \resumeItem{Honors \& Coursework: Student Collaborator (3~ECTS), Global Resilience Seminar (3~ECTS), Industrial Internship (12~ECTS) $|$ Mechanical Engineering, Materials Science, Graphic Engineering, Manufacturing Processes.}
+        \resumeItem{Academic Appointments: GOAL Lab Curricular Practices (12~ECTS), SIC Lab Collaborator (3~ECTS), Extracurricular Internship (12~ECTS) $|$ Mechanical Engineering, Materials Science, Graphic Engineering.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -99,16 +99,29 @@
  \end{itemize}
  \vspace{-4pt}
 
-%---------- EXPERIENCIA PROFESIONAL ----------
-\section{Professional Experience}
+%---------- EXPERIENCIA PROFESIONAL Y DE INVESTIGACIÓN ----------
+\section{Professional \& Research Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Research Intern -- Automated CAD Synthesis \& KBE (GOAL Lab, TIC-259)}{Cádiz, Spain}
+      {Curricular Internship (12 ECTS) $|$ \href{https://tic259.uca.es/}{tic259.uca.es} -- Escuela Superior de Ingeniería (ESI)}{2026 -- 2027}
+      \resumeItemListStart
+        \resumeItem{Advancing Bachelor's Thesis research on generative CAD automation, developing Model Context Protocol (MCP) and Knowledge-Based Engineering (KBE) pipelines that bridge LLM reasoning to parametric SolidWorks kernels.}
+      \resumeItemListEnd
+
     \resumeSubheading
       {Industrial Engineering Intern -- Technical Documentation \& CE Marking}{Cádiz, Spain}
       {Extracurricular Industrial Internship (12 ECTS)}{Summer 2026}
       \resumeItemListStart
-        \resumeItem{Validated 100\% regulatory compliance for new production lines by authoring Technical Construction Files, Declarations of Conformity, and ISO manufacturing instructions under European Directives (2006/42/EC Machinery, 2014/35/EU LVD).}
-        \resumeItem{Mitigated operational hazards across mechanical and electrical product architectures by conducting comprehensive risk hazard assessments (EN ISO 12100) and defining mandatory safety interlock criteria.}
-        \resumeItem{Accelerated factory-floor design sign-off by leading cross-functional reviews between engineering and operations, eliminating documentation non-conformances prior to CE dossier submission.}
+        \resumeItem{Validated regulatory compliance for production lines by authoring Technical Construction Files, Declarations of Conformity, and ISO manufacturing instructions under European Directives (2006/42/EC Machinery, 2014/35/EU LVD).}
+        \resumeItem{Mitigated mechanical and electrical hazards via comprehensive risk assessments (EN ISO 12100) and defined mandatory safety interlocks; accelerated factory-floor design sign-off across cross-functional engineering reviews.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Student Collaborator -- Docent Innovation (SIC Lab, TIC-145)}{Cádiz, Spain}
+      {Academic Research Collaboration (3 ECTS) $|$ \href{https://tic145.uca.es/}{tic145.uca.es} -- Escuela Superior de Ingeniería (ESI)}{2025 -- 2026}
+      \resumeItemListStart
+        \resumeItem{Spearheaded docent innovation in 1st-year ``Introducción a la Programación''; engineered interactive Jupyter Notebook coding exercises and authored environment setup guides ensuring seamless compilation for incoming cohorts.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
